@@ -21,7 +21,7 @@ from pyrogram import Client, filters
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = environ.get('API_KEY', 'e3eddb3e7c5513eee187120fce788ddc4a1a643b')
+API_KEY = environ.get('API_KEY', 'aed5998cc11b106b9137933e23d3a91abab3eae8')
 
 bot = Client('droplink bot',
              api_id=API_ID,
@@ -51,7 +51,7 @@ async def link_handler(bot, message):
 
 
 async def get_shortlink(link):
-    url = 'https://droplink.co/api'
+    url = 'https://expertlinks.in/api'
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
